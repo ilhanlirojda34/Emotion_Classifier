@@ -94,8 +94,7 @@ body::before {
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr !important;
-    height: auto !important;
-    min-height: 100vh !important;
+    height: 100vh !important;
     overflow-y: auto !important;
   }
 
@@ -110,22 +109,18 @@ body::before {
     padding: 20px 16px !important;
   }
 
-  /* Orb container küçült */
+  section {
+    padding: 80px 16px 24px !important;
+    gap: 16px !important;
+    justify-content: flex-start !important;
+    overflow-y: auto !important;
+    height: auto !important;
+    min-height: 100vh !important;
+  }
+
   canvas {
     width: 260px !important;
     height: 260px !important;
-  }
-
-  /* Center section padding azalt */
-  section {
-    padding: 16px !important;
-    gap: 12px !important;
-  }
-
-  /* Float animasyonu mobilde kapat */
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-4px); }
   }
 }
 
