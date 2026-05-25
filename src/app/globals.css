@@ -92,6 +92,12 @@ body::before {
 
 /* Mobile */
 @media (max-width: 768px) {
+    section > div:first-of-type {
+    position: relative !important;
+    top: auto !important;
+    margin-bottom: 8px !important;
+  }
+  
   main {
     grid-template-columns: 1fr !important;
     height: 100vh !important;
